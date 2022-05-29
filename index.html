@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function formatDate(date) {
+            let difference = new Date() - date;
+            if (difference < 1000) {
+                alert('прямо сейчас');
+            };
+            let seconds = difference / 1000
+
+            if (seconds < 60) {
+                alert(`${seonds} сек. назад`);
+            };
+
+            let minutes = seconds / 60;
+            if (minutes < 60) {
+                alert(`${minutes} мин.назад`);
+            } else {
+                alert(date)
+            };
+
+        }
+    </script>
+</body>
+
+</html>
